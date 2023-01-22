@@ -1,0 +1,22 @@
+/*Global Setting*/
+*
+    border: solid 1px
+    position: relative
+    font-family: 微軟正黑體
+    font-size: 14px
+    color:#333333 
+    box-sizing: border-box
+    vertical-align: top
+
+@mixin size($w,$h)
+    width: $w
+    height: $h
+
+/*導航列NAV*/
+.nav_block{
+    +size(300px,400px)
+    display: flex;
+}
+
+
+

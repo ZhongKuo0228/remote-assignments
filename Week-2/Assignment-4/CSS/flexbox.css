@@ -1,0 +1,140 @@
+/*Global Setting*/
+*{
+    /* border: solid 1px; */
+    position: relative;
+    font-family: 微軟正黑體;
+    color:#333333 ;
+    box-sizing: border-box;/*格線體積算在方塊內*/
+    vertical-align: top;
+    margin: 0;
+
+}
+
+@media screen and (max-width:1220px) {
+    .row {
+        width: 100%;
+    }
+    .content_box {
+        width: 100vw;
+    }
+
+}
+
+
+/*導航列NAV*/
+.nav_block{
+    height: 30px;
+    width: 100%;
+    display: flex;
+    padding: 0px;
+    line-height: 30px;
+    font-size: 14px;
+    background-color: #EEEEEE;
+}
+
+.nav_title{
+    width: 80%;
+    padding-left: 10px;   
+}
+
+.nav_item{
+    width: 20%; 
+    display: flex; 
+    justify-content: space-around; 
+
+}
+
+.nav_button{
+    width:25%;
+    margin-left: 2px;
+    padding: 3px;
+    text-align: center;
+    line-height: 20px;
+}
+
+
+/*標題title*/
+#title{
+    height: 200px;
+    width: 100%;
+    padding: 0px;
+    line-height: 200px;
+    text-align: center;
+    font-size: 50px;
+    background-color: #CEDCEC;
+    cursor: pointer;
+}
+
+/*body內文*/
+.main{
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main_title{
+    height: 5%;
+    line-height: 80px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.main_box {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.row{
+    height: 80%;
+    width : 1220px; /*1200+20=1220*/
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+
+.content_box{
+    height: 250px;
+    width: 590px; /*context box 寬度要求1200，(1200-20)/2=590*/
+    margin: 10px;
+    text-align: center;
+    background-color: #8A98A7;
+}
+
+
+.main_bottom{
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom_button{
+    height: 50px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 14px;
+    background-color: #DFEDFD;
+    cursor: pointer;
+
+}
+
+#additional_main_box{
+    height: 80%;
+    width: 100%;
+    display: none;  /*預設隱藏*/
+    align-items: center;
+    justify-content: center;
+
+}

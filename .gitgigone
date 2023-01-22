@@ -1,0 +1,9 @@
+#忽略規則
+#target       忽略這個target目錄
+#angular.json 忽略這個angular.json文件
+#log/*        忽略log下的所有文件
+#CSS/*.CSS    忽略CSS目錄下的。 CSS文件
+
+#--------------------------------------
+# files
+node_modules

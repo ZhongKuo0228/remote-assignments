@@ -1,0 +1,16 @@
+@charset "UTF-8";
+/*Global Setting*/
+* {
+  border: solid 1px;
+  position: relative;
+  font-family: 微軟正黑體;
+  font-size: 14px;
+  color: #333333;
+  box-sizing: border-box; /*格線體積算在方塊內*/
+  vertical-align: top;
+}
+
+/*導航列NAV*/
+.nav_block {
+  display: inline-flexbox;
+}/*# sourceMappingURL=style.css.map */
