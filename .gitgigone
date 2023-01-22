@@ -9,4 +9,4 @@
 node_modules
 
 #檔案
-*.DS_Store
+.DS_Store
