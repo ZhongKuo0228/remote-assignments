@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Week 3_Assingments_SumPage</title>
+  <link rel="stylesheet" href="css/sum.css">
+  <script>
+    let xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function() {
+      if (xhr.readyState == 4){
+        document.getElementById('ajax').innerHTML = xhr.responseText;
+      }
+    };
+    xhr.open('GET',`http://localhost:3000/data?number=10`);
+    xhr.send();
+
+    function fetchNumber() {
+      let inputNumber = parseInt(document.getElementById('inputNumber').value);
+      xhr.open('GET',`http://localhost:3000/data?number=${inputNumber}`);
+      xhr.send();
+    }
+  </script>
+
+</head>
+<body>
+
+  <div>
+    <div>
+      <h1>Sum Html</h1>
+    </div>
+  </div>
+  <div id="ajax"></div>
+        <span>請輸入number以計算1+2+3+......+N之總和</span>
+        <input type="text" id="inputNumber">
+        <button onclick="fetchNumber()">計算</button>
+</body>
+</html>
