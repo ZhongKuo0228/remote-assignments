@@ -17,6 +17,9 @@ router.get('/',(req, res) =>{
     }else if(isNaN(numbers)){
         numberResult = 'Wrong Parameter!';
         noQuery = 0;
+    }else if(Number(numbers) < 0){
+        numberResult = '負數無法計算，請使用正整數重新計算，謝謝';
+        noQuery = 2;
     }else{
         numberResult = ((1+Number(numbers))*Number(numbers))/2;
         noQuery = 0;

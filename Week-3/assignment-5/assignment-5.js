@@ -1,17 +1,22 @@
-function twoSum(nums, target) { 
-    let result = [];
-    for (let i = 0; i < nums.length; i++) {
-        for (let j = i; j < nums.length; j++)
-            if (nums[i] + nums[j] == target) {
-            result = [i, j];
-            }
-        }
-    if (result[1] > 0) { //j>0表示有配對成功
+function twoSum(nums, target) {
+  let result = [];
+  for (let i = 0; i < nums.length; i++) {
+    for (let j = i; j < nums.length; j++)
+      if (nums[i] + nums[j] == target) {
+        result = [i, j];
+      } else {
         result;
-    } else {
-        result = 'No twosum Result!'
-    }
-        console.log(result);
+      }
+    return result;
+  }
+
+
+  if (result[1] > 0) { //j>0表示有配對成功
+    result;
+  } else {
+    result = 'No twosum Result!'
+  }
+  console.log(result);
 }
     /*
     For example:

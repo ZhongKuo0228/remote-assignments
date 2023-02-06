@@ -8,6 +8,12 @@
 #資料夾
 node_modules
 Ver 1.0
+Ver 2.0
 
 #檔案
 .DS_Store
+*.env
+
+#初寫Code的測試資料夾
+testCode
+*(undone)

@@ -8,7 +8,7 @@ html(lang="zh-Hant-TW")
                 h1 Welcome, #{name}!
             else 
                 h1 MyName站口
-                form(action='/myName', method='post')
+                form(action='/trackName', method='post')
                     label 請輸入使用者名稱
-                        input(type='/myName', name='username')
+                        input(type='text', name='username')
                     button(type='submit') 確認
